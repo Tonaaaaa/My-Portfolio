@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trần Văn Toàn - Backend Developer</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">TVT</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="particles-container" id="particles-js"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 home-content">
+            <h1 class="name-title" id="name-title">Trần Văn Toàn</h1>
+            <h2 class="subtitle">
+              Backend Developer | ASP.NET Core Enthusiast
+            </h2>
+            <p class="description">
+              Sinh viên năm cuối HUTECH, đam mê xây dựng hệ thống backend mạnh
+              mẽ với C# và ASP.NET Core. Khám phá các dự án của tôi để thấy tôi
+              đã làm gì!
+            </p>
+            <a href="#projects" class="btn btn-custom">Explore My Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title" data-aos="zoom-in">About Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 text-center" data-aos="fade-right">
+            <img
+              src="../images/profile-image.jpg"
+              alt="Profile Image"
+              class="about-image"
+            />
+          </div>
+          <div class="col-lg-8" data-aos="fade-left">
+            <p data-aos="fade-up" data-aos-delay="200">
+              Tôi là Trần Văn Toàn, sinh viên năm cuối tại ĐH HUTECH, chuyên
+              ngành Công nghệ Phần Mềm. Tôi đam mê xây dựng các hệ thống backend
+              mạnh mẽ với C# và ASP.NET Core, tập trung vào thiết kế API RESTful
+              hiệu quả và tối ưu cơ sở dữ liệu.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="300">
+              Mục tiêu của tôi là trở thành một lập trình viên backend xuất sắc,
+              mang lại giá trị thực tiễn qua các giải pháp công nghệ sáng tạo.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="400">
+              Với tư duy logic và tinh thần học hỏi, tôi luôn sẵn sàng đối mặt
+              với các thách thức kỹ thuật để tạo ra sản phẩm đáng tin cậy.
+            </p>
+            <div class="education-card" data-aos="fade-up" data-aos-delay="500">
+              <h3 class="education-title">Đại học Công nghệ TP.HCM (HUTECH)</h3>
+              <p>Chuyên ngành: Công nghệ Phần Mềm</p>
+              <p>Thời gian: 2021 – 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title" data-aos="fade-down">Technical Skills</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skill-category" data-aos="fade-up">
+              <h3 class="skill-title">Ngôn ngữ lập trình</h3>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span><i class="fab fa-cuttlefish skill-icon"></i> C#</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span><i class="fab fa-js skill-icon"></i> JavaScript</span>
+                  <span>60%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span><i class="fas fa-database skill-icon"></i> SQL</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="85%"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="skill-title">Framework và thư viện</h3>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span
+                    ><i class="fas fa-code skill-icon"></i> ASP.NET Core (MVC,
+                    API)</span
+                  >
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="85%"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span
+                    ><i class="fas fa-database skill-icon"></i> Entity Framework
+                    Core</span
+                  >
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="85%"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span
+                    ><i class="fas fa-file-code skill-icon"></i> Razor
+                    Pages</span
+                  >
+                  <span>70%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="70%"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span
+                    ><i class="fab fa-bootstrap skill-icon"></i> Bootstrap</span
+                  >
+                  <span>70%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="70%"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span
+                    ><i class="fas fa-mobile-alt skill-icon"></i> Flutter</span
+                  >
+                  <span>65%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="65%"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="skill-title">Cơ sở dữ liệu</h3>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span
+                    ><i class="fas fa-server skill-icon"></i> SQL Server</span
+                  >
+                  <span>80%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span><i class="fas fa-database skill-icon"></i> MySQL</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="85%"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span><i class="fas fa-server skill-icon"></i> MongoDB</span>
+                  <span>60%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+              <h3 class="skill-title">Kỹ năng khác</h3>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span
+                    ><i class="fas fa-code-branch skill-icon"></i> Thiết kế API
+                    RESTful</span
+                  >
+                  <span>80%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span
+                    ><i class="fas fa-database skill-icon"></i> Tối ưu truy vấn
+                    cơ sở dữ liệu</span
+                  >
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="75%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span><i class="fab fa-git-alt skill-icon"></i> Git</span>
+                  <span>70%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="70%"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">
+                  <span
+                    ><i class="fas fa-tools skill-icon"></i> Visual Studio,
+                    Postman</span
+                  >
+                  <span>80%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-width="80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title" data-aos="zoom-in">My Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-lg-6 mb-4" data-aos="slide-up">
+            <div class="project-card">
+              <div class="project-content">
+                <h3 class="project-title">Ứng dụng đặt vé xem phim</h3>
+                <p class="project-description">
+                  Một hệ thống đặt vé xem phim trực tuyến, mang đến trải nghiệm
+                  liền mạch từ chọn phim, lịch chiếu, ghế ngồi đến thanh toán
+                  giả lập. Ứng dụng được tối ưu để xử lý nhiều yêu cầu đồng
+                  thời, đảm bảo dữ liệu chính xác và phản hồi nhanh, ngay cả
+                  trong giờ cao điểm.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">ASP.NET Core API</span>
+                  <span class="tech-badge">Entity Framework Core</span>
+                  <span class="tech-badge">MySQL</span>
+                  <span class="tech-badge">Flutter</span>
+                </div>
+                <h4>Vai trò:</h4>
+                <ul>
+                  <li>
+                    Thiết kế và phát triển backend với ASP.NET Core, tạo API
+                    RESTful để quản lý lịch chiếu, ghế ngồi và giao dịch.
+                  </li>
+                  <li>
+                    Xây dựng cơ sở dữ liệu MySQL với các bảng tối ưu, sử dụng
+                    transaction để đảm bảo tính toàn vẹn dữ liệu.
+                  </li>
+                  <li>
+                    Tích hợp API với giao diện Flutter, đảm bảo tốc độ và độ ổn
+                    định.
+                  </li>
+                  <li>
+                    Đóng góp vào giao diện Flutter, tạo các màn hình chọn ghế và
+                    thanh toán thân thiện.
+                  </li>
+                </ul>
+                <a
+                  href="https://github.com/Tonaaaaa/BookingMovieTicket"
+                  class="btn btn-custom mt-3"
+                >
+                  <i class="fab fa-github me-2"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-lg-6 mb-4" data-aos="slide-up" data-aos-delay="200">
+            <div class="project-card">
+              <div class="project-content">
+                <h3 class="project-title">
+                  Website bán đồ công nghệ (TUTSHOP)
+                </h3>
+                <p class="project-description">
+                  Một nền tảng thương mại điện tử chuyên cung cấp các sản phẩm
+                  công nghệ như điện thoại, laptop, và phụ kiện. Website hỗ trợ
+                  tìm kiếm sản phẩm, thêm vào giỏ hàng, đặt hàng trực tuyến, và
+                  theo dõi trạng thái đơn hàng với giao diện hiện đại, dễ sử
+                  dụng trên mọi thiết bị.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">ASP.NET Core API</span>
+                  <span class="tech-badge">Entity Framework Core</span>
+                  <span class="tech-badge">SQL Server</span>
+                  <span class="tech-badge">Bootstrap</span>
+                </div>
+                <h4>Vai trò:</h4>
+                <ul>
+                  <li>
+                    Phát triển backend với ASP.NET Core, xây dựng API RESTful để
+                    quản lý sản phẩm, danh mục, giỏ hàng và đơn hàng.
+                  </li>
+                  <li>
+                    Thiết kế cơ sở dữ liệu SQL Server với các bảng liên quan,
+                    tối ưu truy vấn để hỗ trợ tìm kiếm nhanh.
+                  </li>
+                  <li>
+                    Tích hợp API với giao diện frontend, đảm bảo dữ liệu hiển
+                    thị chính xác và đồng bộ.
+                  </li>
+                  <li>
+                    Thiết kế giao diện responsive với Bootstrap, tập trung vào
+                    trải nghiệm người dùng.
+                  </li>
+                </ul>
+                <a
+                  href="https://github.com/Tonaaaaa/TUTSHOP"
+                  class="btn btn-custom mt-3"
+                >
+                  <i class="fab fa-github me-2"></i>View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title" data-aos="fade-left">Experience</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Experience 1 -->
+          <div class="col-lg-12" data-aos="slide-up">
+            <div class="experience-card">
+              <h3 class="experience-title">
+                <i class="fas fa-users experience-icon"></i>
+                Ứng dụng đặt vé xem phim
+              </h3>
+              <p class="experience-date">2024</p>
+              <p>
+                Hợp tác trong nhóm 4 người để phát triển hệ thống đặt vé xem
+                phim trực tuyến như một phần của đồ án trường.
+              </p>
+              <h4 class="mt-3">Vai trò:</h4>
+              <p class="experience-role">
+                • Chủ trì phát triển backend với ASP.NET Core, xây dựng API
+                RESTful để xử lý đặt vé đồng thời.
+              </p>
+              <p class="experience-role">
+                • Thiết kế cơ sở dữ liệu MySQL với các ràng buộc để đảm bảo giao
+                dịch an toàn.
+              </p>
+              <p class="experience-role">
+                • Tích hợp API với giao diện Flutter, phối hợp với nhóm để đồng
+                bộ dữ liệu.
+              </p>
+              <p class="experience-role">
+                • Đóng góp vào giao diện Flutter, tối ưu trải nghiệm chọn ghế và
+                thanh toán.
+              </p>
+              <p class="experience-result">
+                Ứng dụng hoàn thành đúng tiến độ, được đánh giá cao về khả năng
+                xử lý tải và giao diện thân thiện.
+              </p>
+              <a
+                href="https://github.com/Tonaaaaa/BookingMovieTicket"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i>
+                github.com/Tonaaaaa/BookingMovieTicket
+              </a>
+            </div>
+          </div>
+          <!-- Experience 2 -->
+          <div class="col-lg-12 mt-4" data-aos="slide-up" data-aos-delay="200">
+            <div class="experience-card">
+              <h3 class="experience-title">
+                <i class="fas fa-laptop-code experience-icon"></i>
+                Website bán đồ công nghệ (TUTSHOP)
+              </h3>
+              <p class="experience-date">2024</p>
+              <p>
+                Làm việc trong nhóm để xây dựng một website thương mại điện tử
+                chuyên bán sản phẩm công nghệ.
+              </p>
+              <h4 class="mt-3">Vai trò:</h4>
+              <p class="experience-role">
+                • Phát triển backend với ASP.NET Core, tạo API RESTful để quản
+                lý sản phẩm, giỏ hàng và đơn hàng.
+              </p>
+              <p class="experience-role">
+                • Thiết kế cơ sở dữ liệu SQL Server với hiệu suất cao, hỗ trợ
+                tìm kiếm nhanh.
+              </p>
+              <p class="experience-role">
+                • Tích hợp API với giao diện Bootstrap, đảm bảo tốc độ tải
+                trang.
+              </p>
+              <p class="experience-role">
+                • Thiết kế giao diện responsive với Bootstrap, tối ưu cho nhiều
+                thiết bị.
+              </p>
+              <p class="experience-result">
+                Website hoàn thiện với giao diện hiện đại, hỗ trợ quy trình mua
+                sắm mượt mà.
+              </p>
+              <a
+                href="https://github.com/Tonaaaaa/TUTSHOP"
+                class="project-link"
+              >
+                <i class="fab fa-github"></i> github.com/Tonaaaaa/TUTSHOP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title" data-aos="zoom-in">Get in Touch</h2>
+            <p data-aos="fade-up" data-aos-delay="200">
+              Hãy liên hệ với tôi qua email hoặc GitHub để trao đổi về cơ hội
+              hợp tác!
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-6" data-aos="slide-up">
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Tên của bạn"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email của bạn"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Tin nhắn của bạn"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-custom w-100"
+                  id="sendMessageBtn"
+                >
+                  <span>Send Message</span>
+                  <i class="fas fa-paper-plane ms-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="slide-up" data-aos-delay="200">
+            <div class="contact-info">
+              <div class="contact-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-envelope contact-icon"></i>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <a href="mailto:toandev0706@gmail.com"
+                    >toandev0706@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-github contact-icon"></i>
+                <div class="contact-text">
+                  <h4>GitHub</h4>
+                  <a href="https://github.com/Tonaaaaa" target="_blank"
+                    >github.com/Tonaaaaa</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fab fa-facebook contact-icon"></i>
+                <div class="contact-text">
+                  <h4>Facebook</h4>
+                  <a
+                    href="https://facebook.com/tran.van.toan.53214"
+                    target="_blank"
+                    >facebook.com/tran.van.toan.53214</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="social-icons" data-aos="fade-up">
+          <a
+            href="https://github.com/Tonaaaaa"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://facebook.com/tran.van.toan.53214"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="mailto:toandev0706@gmail.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p data-aos="fade-up" data-aos-delay="200">
+          © 2025 Trần Văn Toàn. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
